@@ -15,14 +15,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        MapKitFactory.setApiKey("ece0a5c2-8cbf-4417-82b4-0aecc22f148d")
-
         MapKitFactory.initialize(this);
 
         setContentView(R.layout.activity_main)
 
-
-        mapview = mapview.findViewById(R.id.mapview)
+        mapview = findViewById(R.id.mapview)
 
         mapview.map.move(
             CameraPosition(
